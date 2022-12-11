@@ -1,0 +1,93 @@
+*{marg}
+body{
+    font-family: arial;
+    margin: 5;
+    padding: 5%;
+    background-color: rgb(154, 183, 243);
+}
+*{
+
+    padding: 10;
+    margin: 10;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: rgb(1, 152, 219); 
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+}
+nav ul {
+    background-color: rgb(161, 161, 155);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: rgba(10, 12, 12, 0.966);
+    padding: 10px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.form-login {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: right;
+    box-shadow: 7px 12px 35px black;
+    padding: 20px 30px;
+    border-top: 4px solid gray ;
+    color: azure;
+}
+.form-login h5 {
+    margin: o;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size:12px;
+}
+.controls {
+    width: 100%;
+    border: 1px solid rgb(39, 123, 219);
+    margin-bottom: 15px;
+    padding: 11px 10px; 
+    background-color: rgb(193, 202, 206);
+    font-size: 14px;
+}
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.form-login a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
