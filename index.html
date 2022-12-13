@@ -9,99 +9,86 @@
 </head>
 <body>
   <img src="images/Captura de Pantalla 2022-08-10 a la(s) 7.24.56 p.m..png" width="170" height="70"/>
-</div>
+
 
 <h1>Software para gestion de Bares </h1>  
     <nav>
         <ul>
-            <li><select name="" id="">
-              
-              <option value=""> Crear Clientes </option>
-              <option value=""> Editar Clientes</option>
-              <option value=""> Listar Clientes</option>
-            </select></li>
-            <li><a href="">Emitir Factura</a></li>
+            <li>Clientes</li>
+            <li><a href="formulario factura.html">Emitir Factura</a></li>
             <li><a href="">Inventarios</a></li>
-            <li><select name="" id="">
-              <option value=""> Crear producto</option>
-              <option value=""> Editar producto</option>
-              <option value=""> Listar producto</option>
-            </select></li>
+            <li> <a href="inventarios_productos.html">Productos</a></li>
             <li><a href="">Gastos</a></li>
             <li><a href="">Reportes</a></li>
         </ul>
     </nav>
+
+
+
+    <h1 style= "color: #fbfcfd; width: 100%; font-size: 200%; text-align: center;" >
+      Crear cliente +
+       </h1>
+ 
+    <form style= "background-color: #0b0b0c">
+      <fieldset>
+      <br><br>
+      <legend style= "color:#FDFDFD">Datos Personales</legend>
+                        
+      <label style="color:#FDFDFD">Nombre: </label>
+        <input type="text"; name="nombre" id="nombre">
+      <label style="color:#FDFDFD">Apellido: </label>
+        <input type="text"; name="apellido" id="apellido">   
+      <label style="color:#FDFDFD">Email: </label>
+        <input type="text"; name="email" id="email" >   
+      <span style="color:#fbfcfd">Fecha Nacimiento:</b>
+      <input type="date" name = "dia" id="dia" ></b><br><br> <!--fecha-->
+      <br>
+      <label style= "color:#FDFDFD" > Telefono: </label>   
+        <input type="text" name="telefono" id="telefono" > 
+      <br><br>
+      <!-- <label style= "color:#FDFDFD" >Direccion: </label>    
+        <input type="text" name="direccion" id="direccion">
+      <br> <br> -->
+      <!-- <label style="color:#FDFDFD">Cedula ciudadania: </label>
+        <input type="text"; name="cedula" id="cedula" >
+      <label style="color:#FDFDFD">Correo Electronico: </label>
+        <input type="text"; name="Correo Electronico" id="Correo Electronico" >    -->
+
+    </form>
+    <br>
+    <center>
+      <input type='button' name='boton' id='listarBtn' value='Listar' onclick="listCl()" style='width:200px; height:45px'>
+      </center> 
+      <br>
+    <center>
+    <input type='button' name='boton' id='agregarBtn' value='Agregar' onclick="obtenerDatos()" style='width:200px; height:45px'>
+    </center>  
+    <br> 
+    <center>
+      <input type='button' name='boton' id='agregarBtn' value='Actualizar' onclick="obtenerDatosAct()" style='width:200px; height:45px'>
+    </center> 
+    <br>
+    
+    <center>
+    </center> 
+    <br>
+    </fieldset>
+    
+
+    <dic id="listarDiv"></dic>
+
+    <hr>
+
+    <footer style="text-align: center;">https://www.Tecnofrios.com</footer> 
+    <time datetime="2022-04-08">Agosto 4 de 2022</time>
+
+
+    <script src="./js/crudClientes.js"></script>
 </body>
 </html>
-<hr>
 
 
-
-        <!DOCTYPE html>
-        <html lang="es">
-        <head>
-        <meta charset="UFT-8"> 
-        
-        <title >CLIENTES</title>
-        </head> 
-        <body style= "background-color: #7a97f7fd">
-           
-        <h1 style= "color: #fbfcfd; width: 100%; font-size: 200%; text-align: center;" >
-             Crear cliente +
-              </h1>
-        
-        <form style= "background-color: #0b0b0c">
-            <fieldset  >
-        <br><br>
-        <legend style= "color:#FDFDFD">Datos Personales</legend>
-                          
-        <label style="color:#FDFDFD">Nombre: </label>
-        <input type="text"; name="Nombre">
-        <label style="color:#FDFDFD">Apellido: </label>
-        <input type="text"; name="Apellido">   
-        <label style="color:#FDFDFD">No Documento Identidad: </label>
-        <input type="text"; name="No Documento Identidad">   
-        <label style= "color:#FDFDFD" >Direccion: </label>    
-        <input type="text" name="Direccion:">
-        <br> <br>
-        <label style= "color:#FDFDFD" > Telefono: </label>   
-        <input type="text" name="Telefono:"> 
-        <br>
-        </select>
-        <br>
-        <label style="color:#FDFDFD">Cedula ciudadania: </label>
-        <input type="text"; name="Cedula de ciudadania">
-        <label style="color:#FDFDFD">Correo Electronico: </label>
-        <input type="text"; name="Correo Electronico">   
-        </select>
-        <br>
-        <br>
-        <b style="color:#fbfcfd"> Seleccione Fecha Nacimiento</b>
-        <input type="date" name = "dia"></b><br><br> <!--fecha-->
-        <br>
-        </form>
-        <br>
-        <center>
-        <input type='button' name='boton' value='Enviar' style='width:200px; height:45px'>
-        </center>  
-        <br> 
-        <center>
-        <input type='button' name='boton' value='Editar' style='width:200px; height:45px'>
-        </center> 
-        <br>
-        <center>
-        <input type='button' name='boton' value='Listar' style='width:200px; height:45px'>
-        </center> 
-        <br>
-        <center>
-        <input type='button' name='boton' value='Eliminar' style='width:200px; height:45px'>
-        </center> 
-        <br>
-        </fieldset>
-        </form>
-        </body>
-        </html>
 
         
-        <footer style="text-align: center;">https://www.Tecnofrios.com</footer> 
-        <time datetime="2022-04-08">Agosto 4 de 2022</time>
+
+        
